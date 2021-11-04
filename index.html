@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Test</title>
+</head>
+<body>
+    <header class="page__header">
+        <span class="logo">
+          <a href="/" class="logo__link">
+            <img
+              class="logo__image"
+              src="assets/svg/logo.svg"
+              alt="alt"
+            
+            />
+            Notepad
+          </a>
+        </span>
+       <button class="page__header_addBtn"><img src='assets/svg/add.svg'></img></button>
+      </header>
+      <main>
+        <ul class="todo__list"></ul>
+      </main>
+      <div class="modal__overlay">
+        <div class="modal__container">
+          <span class="modal__container_span">Enter a new note</span>
+          <form class="modal__form">
+              <textarea type='textarea' class="modal__textarea" ></textarea>
+             <label class="modal__checkbox">Is done?  <input  id="isChecked" type='checkbox'  ></input></label> 
+              <input type='submit' class="modal__submitBtn" value='Add'> </input>
+          </form>
+        </div>
+      </div>
+    
+    <script src="js/app.js"></script>
+</body>
+</html>
